@@ -1,14 +1,13 @@
-import fastify from 'fastify';
+import fastify from 'fastify'
 
+const app = fastify()
 
-const app = fastify();
+app.get('/', async (req, res) => {})
 
-app.get('/', async(req, res)=> {
-  
-})
-
-app.listen({
-  port: 3333
-}).then(()=> {
-  console.log('server online')
-})
+app
+  .listen({
+    port: 3333,
+  })
+  .then(() => {
+    console.log('server online')
+  })
