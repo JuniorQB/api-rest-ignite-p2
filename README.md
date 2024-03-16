@@ -7,7 +7,7 @@
 
 # RN 
 - [X] transação pode ser do tipo crédito que somará ao valor total, ou débito subttairá
-- [ ] Deve ser possível identificarmos o usuário entre as requisições 
-- [ ] o usuário só pode visualizar transações o qual ele criou
+- [X] Deve ser possível identificarmos o usuário entre as requisições 
+- [X] o usuário só pode visualizar transações o qual ele criou
 
 # RNF
