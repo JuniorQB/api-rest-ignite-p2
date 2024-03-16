@@ -1,7 +1,9 @@
 # Arquivos de dependências npm
 node_modules/
 db/mydb.sqlite
+db/test.sqlite
 .env
+.env.test
 
 # Arquivos de dependências Yarn
 /yarn-error.log
