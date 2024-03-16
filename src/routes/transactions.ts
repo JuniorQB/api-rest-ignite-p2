@@ -4,8 +4,12 @@ import { z } from 'zod'
 
 import { randomUUID } from 'crypto'
 import { checkSessionIdExists } from '../middlewares/check-sessionid-exists'
+import { request } from 'http'
 
 export async function transactionsRoutes(app: FastifyInstance) {
+  app.addHook('preHandler', async (req, res) => {
+    console.log(`[${req.method}]`)
+  })
   app.get('/', { preHandler: [checkSessionIdExists] }, async (request) => {
     const { sessionId } = request.cookies
     console.log(sessionId)
